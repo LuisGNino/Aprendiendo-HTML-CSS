@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Sweetalert</title>
+</head>
+<body>
+    <button onclick="alerta('Bien Hecho!','Actualización Exitosa!','success')">Success</button>
+    <button onclick="alerta('Confirma!','Desea actualizar el registro?','info')">Information</button>
+    <button onclick="alerta('Precaución!','Realmente dese actualizar el registro?','warning')">Warning</button>
+    <button onclick="alerta('Algo Salió Mal!','Valida la información!','error')">Error</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function alerta(titulo,mensaje,tipo){
+            Swal.fire(
+                titulo,
+                mensaje,
+                tipo
+                )
+        }
+    </script>
+</body>
+</html>
